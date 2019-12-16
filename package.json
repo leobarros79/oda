@@ -1,0 +1,39 @@
+{
+  "name": "oracle-bot-webhook",
+  "version": "1.0.0",
+  "description": "Google Home with Oracle Bot Webhook channel",
+  "main": "service.js",
+  "license": "",
+  "author": "Leonardo de Barros",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leobarros79/oda-google-home"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm run eslint",
+    "eslint": "eslint *.js lib",
+    "eslint-fix": "eslint --fix *.js lib"
+  },
+  "keywords": [
+    "oracle",
+    "bots",
+    "mobile",
+    "components",
+    "dev",
+    "nodejs"
+  ],
+  "contributors": [
+    {
+      "name": "Leonardo de Barros",
+      "email": "leo.barros@oracle.com"
+    }
+  ],
+  "dependencies": {
+    "@oracle/bots-node-sdk": "^2.0.0",
+    "express": "^4.16.4"
+  }
+}
