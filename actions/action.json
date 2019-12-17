@@ -1,0 +1,37 @@
+{
+    "actions": [{
+        "description": "Oracle Digital Assistant for Google Assistant",
+        "name": "MAIN",
+        "fulfillment": {
+            "conversationName": "Oracle"
+        },
+        "intent": {
+            "name": "actions.intent.MAIN",
+            "trigger": {
+                "queryPatterns": [
+                    "Oi, Cutrale",
+                    "hey, cutrale",
+                    "cutrale",
+                    "falar com cutrale"
+                ]
+            }
+        }
+    }],
+    "conversations": {
+        "Oracle": {
+            "name": "Oracle",
+            "url": "https://odaserver.herokuapp.com/",
+            "fulfillmentApiVersion": 2,
+            "in_dialog_intents": [{
+                "name": "actions.intent.CANCEL",
+                "trigger": {
+                    "queryPatterns": [
+                        "Cancelar",
+                        "Sair"
+                    ]
+                }
+            }]
+        }
+    },
+    "locale": "pt-BR"
+}
