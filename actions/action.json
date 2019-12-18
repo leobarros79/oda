@@ -20,7 +20,7 @@
     "conversations": {
         "Oracle": {
             "name": "Oracle",
-            "url": "https://odaserver.herokuapp.com/",
+            "url": "https://odaserver.herokuapp.com",
             "fulfillmentApiVersion": 2,
             "in_dialog_intents": [{
                 "name": "actions.intent.CANCEL",
